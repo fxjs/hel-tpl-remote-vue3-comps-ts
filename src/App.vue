@@ -1,5 +1,5 @@
 <template>
-  <HelloWorld msg="Welcome to Your Vue.js + TypeScript + hel-micro App"/>
+  <HelloWorld msg="Welcome to Your Vue.js + 微模块"/>
 </template>
 
 <script lang="ts">
