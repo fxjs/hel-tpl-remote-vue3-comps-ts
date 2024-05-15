@@ -1,6 +1,6 @@
-const webpack = require('webpack')
-const { defineConfig } = require('@vue/cli-service')
-const helDevUtils = require('hel-dev-utils')
+const webpack = require('webpack');
+const { defineConfig } = require('@vue/cli-service');
+const helDevUtils = require('hel-dev-utils');
 const appInfo = require('./appInfo');
 
 module.exports = defineConfig({
@@ -11,7 +11,7 @@ module.exports = defineConfig({
   productionSourceMap: true,
   outputDir: helDevUtils.cst.HEL_DIST_DIR,
   transpileDependencies: true,
-  configureWebpack: config => {
+  configureWebpack: (config) => {
     if (!config.output) config.output = {};
     config.output.library = appInfo.groupName;
     config.output.libraryTarget = 'umd';
@@ -36,8 +36,8 @@ module.exports = defineConfig({
     if (!config.plugins) config.plugins = [];
     config.plugins.push(
       new webpack.optimize.LimitChunkCountPlugin({
-        maxChunks: 2
-      }),
+        maxChunks: 2,
+      })
     );
 
     // if user want to inject env var
@@ -47,4 +47,4 @@ module.exports = defineConfig({
     //   }
     // }));
   },
-})
+});

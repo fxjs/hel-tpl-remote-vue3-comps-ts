@@ -13,11 +13,11 @@ import { LIB_NAME } from '../configs/subApp';
 
 export type CompTypes = {
   App: {
-    name: string,
-  },
+    name: string;
+  };
   HelloWorld: {
-    name: string,
-  },
+    name: string;
+  };
 };
 
 /**

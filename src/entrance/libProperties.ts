@@ -5,6 +5,6 @@
 |
 |--------------------------------------------------------------------------
 */
-import comps from '../components'
+import comps from '../components';
 
-export default comps
+export default comps;
