@@ -1,20 +1,25 @@
 <template>
   <div class="hello">
-    <img alt="Vue logo" src="../assets/logo.png">
+    <img alt="Vue logo" src="../assets/logo.png" />
     <h1>{{ msg }}</h1>
-      <h3>Hello World</h3>
+    <h3>Hello World</h3>
+
+    <br />
+    <small>
+      {{ new Date() }}
+    </small>
   </div>
 </template>
 
 <script lang="ts">
-import { defineComponent } from 'vue'
+import { defineComponent } from 'vue';
 
 export default defineComponent({
   name: 'HelloWorld',
   props: {
-    msg: String
-  }
-})
+    msg: String,
+  },
+});
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
