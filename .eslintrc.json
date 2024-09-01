@@ -1,4 +1,7 @@
 {
   "root": true,
-  "extends": ["@tanzerfe/eslint-config-lint"]
+  "extends": ["@tanzerfe/eslint-config-lint"],
+  "rules": {
+    "@typescript-eslint/no-var-requires": "off"
+  }
 }
